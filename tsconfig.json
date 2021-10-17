@@ -1,22 +1,23 @@
 {
+  "ts-node": {
+    "files": true
+  },
   "compilerOptions": {
-    "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
     "declaration": true,
-    "module": "esnext",
+    "target": "es6",
+    "module": "commonjs",
     "rootDir": "./",
     "outDir": "./dist",
-    "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": false,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
   },
   "include": [
+    "**/*.css",
     "src/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

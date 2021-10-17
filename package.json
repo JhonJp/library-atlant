@@ -1,7 +1,7 @@
 {
-  "name": "mb-ready-form",
+  "name": "mb-atlant-library",
   "version": "0.0.1",
-  "description": "A library that has usable components ready for mobile",
+  "description": "A library that has usable components from Atlant dashboard",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": true,
@@ -23,7 +23,6 @@
     "react-date-range": "^1.1.3",
     "react-dropzone": "^11.3.2",
     "react-helmet": "^6.1.0",
-    "react-phone-number-input": "^3.1.23",
     "sass": "^1.35.1",
     "styled-components": "^5.0.1"
   },
@@ -124,7 +123,7 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "tsc": "^2.0.3",
     "tslib": "^2.2.0",
-    "typescript": "4.2.4",
+    "typescript": "^4.2.4",
     "web-vitals": "^1.0.1"
   },
   "typings": "dist/index.d.ts",

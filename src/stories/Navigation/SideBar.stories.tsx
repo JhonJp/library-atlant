@@ -13,7 +13,7 @@ const TextInput: Story<any> = (args) => {
     <Grid container>
       <Grid item xs={4} md={3}>
         <Sidebar {...args}>
-          <SidebarItem navName="Dashboard" openAble={false} />
+          <SidebarItem navName="Index" openAble={false} />
 
           <SidebarItem navName="Dashboards" openAble={true} active >
             <ul>

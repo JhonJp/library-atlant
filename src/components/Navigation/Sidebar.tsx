@@ -3,7 +3,7 @@ import { Shadow } from '../Wrapper/Shadow'
 
 interface SideNavProps {
   hasLogo?: boolean
-  hasHeadeName?: boolean
+  hasHeaderName?: boolean
   hasNavigationLabel?: boolean
   companyName: string
   companyTagline?: string
@@ -11,12 +11,12 @@ interface SideNavProps {
 }
 
 export const Sidebar: FC<SideNavProps> = (props) => {
-  const { hasLogo, companyLogoURL, companyName, hasHeadeName, companyTagline } = props
+  const { hasLogo, companyLogoURL, companyName, hasHeaderName, companyTagline } = props
 
   return (
     <div className="page-sidebar page-sidebar-fixed scroll">
       <ul className="x-navigation x-navigation-hover">
-        <Shadow hide={!hasHeadeName}>
+        <Shadow hide={!hasHeaderName}>
           <li className="xn-logo">
             <a href="/">{companyName}</a>
             <a href="/" className="x-navigation-control"></a>

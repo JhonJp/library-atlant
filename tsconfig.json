@@ -3,21 +3,26 @@
     "files": true
   },
   "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "declaration": true,
-    "target": "es6",
-    "module": "commonjs",
+    "module": "esnext",
     "rootDir": "./",
     "outDir": "./dist",
     "esModuleInterop": true,
     "strict": false,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
   },
   "include": [
     "**/*.css",
-    "src/*"
+    "src/*",
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }

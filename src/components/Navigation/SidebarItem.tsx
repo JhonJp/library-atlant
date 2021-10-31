@@ -1,14 +1,8 @@
 import { FC } from 'react'
 import { Shadow } from '../Wrapper/Shadow'
+import { ISidebarItemProps } from '../../models/interfaces/Nav'
 
-interface SidebarItemProps {
-  active?: boolean
-  openAble: boolean
-  navName: string
-  iconClassName: string
-}
-
-export const SidebarItem: FC<SidebarItemProps> = (props) => {
+export const SidebarItem: FC<ISidebarItemProps> = (props) => {
   return (
     <li className={`${props.openAble ? 'xn-openable' : ''} ${props.active ? 'active' : ''}`}>
       <a href="#">

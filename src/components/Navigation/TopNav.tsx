@@ -1,16 +1,8 @@
 import { FC } from 'react'
 import { Shadow } from '../Wrapper/Shadow'
+import { ITopNavProps } from '../../models/interfaces/Nav'
 
-interface TopNavProps {
-  hasSearch?: boolean
-  hasMgs?: boolean
-  messageCount?: string | number
-  messageURL?: string
-  signOut: () => void
-  onSearch?: (e) => void
-}
-
-export const TopNav: FC<TopNavProps> = (props) => {
+export const TopNav: FC<ITopNavProps> = (props) => {
   const { hasSearch, hasMgs, messageCount, messageURL, signOut, onSearch } = props
   return (
     <ul className="x-navigation x-navigation-horizontal x-navigation-panel">

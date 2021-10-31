@@ -1,16 +1,8 @@
 import { FC } from 'react'
 import { Shadow } from '../Wrapper/Shadow'
+import { ISideNavProps } from '../../models/interfaces/Nav'
 
-interface SideNavProps {
-  hasLogo?: boolean
-  hasHeaderName?: boolean
-  hasNavigationLabel?: boolean
-  companyName: string
-  companyTagline?: string
-  companyLogoURL?: string
-}
-
-export const Sidebar: FC<SideNavProps> = (props) => {
+export const Sidebar: FC<ISideNavProps> = (props) => {
   const { hasLogo, companyLogoURL, companyName, hasHeaderName, companyTagline } = props
 
   return (
